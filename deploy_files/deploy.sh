@@ -6,12 +6,12 @@
 # connect to bridge: ssh ubuntu@137.194.211.146
 login="ubuntu"
 deployemntFolder="deploy_files/"
-deploymentFiles=("load_data.py" "deploy.sh" "masterfilelist-translation.txt" "load_csv_script.py" "test.csv")
+deploymentFiles=("load_data_single_node.py" "load_data.py" "deploy.sh" "masterfilelist-translation.txt" "load_csv_script.py" "test.csv" "load_data_sequential.py" "load_data_sequential_no_pandas.py")
 
 bridgeServer="137.194.211.146"
 bridgeTargetFolder="/mnt/ubuntu/"
 
-computers=("tp-hadoop-56")
+computers=("tp-hadoop-57" "tp-hadoop-56")
 
 # connect to computers and remove existing deployment folder
 for c in ${computers[@]}; do
