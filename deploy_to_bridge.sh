@@ -8,7 +8,7 @@ login="ubuntu"
 bridgeServer="137.194.211.146"
 bridgeTargetFolder="/mnt/ubuntu/"
 deployemntFolder="deploy_files/"
-deploymentFiles=("load_data.py" "deploy.sh" "masterfilelist-translation.txt" "load_csv_script.py" "test.csv")
+deploymentFiles=("load_data_single_node.py" "load_data.py" "deploy.sh" "masterfilelist-translation.txt" "load_csv_script.py" "test.csv" "load_data_sequential.py" "load_data_sequential_no_pandas.py")
 
 # connect to bridge and remove existing deployment folder
 command1=("ssh" "$login@$bridgeServer" "cd $bridgeTargetFolder; rm -rf $bridgeTargetFolder$deployemntFolder; mkdir $bridgeTargetFolder$deployemntFolder")
